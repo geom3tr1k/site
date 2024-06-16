@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a18f8f;
+    max-width: 1200px;
+    margin: auto;
+}
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    background-color: #817474;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 3vh;
+    margin: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #6e5555;
+}
+
+.main {
+    margin: 10px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    background-color: #fff;
+    border-radius: 3vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.block_1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 0 0 5% ;
+    margin: 5% ;
+    border: 5px solid #a18f8f;
+    border-radius: 3vh; 
+    color: #1b1b1b;
+    background-color: #a18f8f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 5%;
+    flex-wrap: wrap;
+}
+
+.img_one {
+    width: 40%;
+    height: 40%; 
+    border-radius: 3vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+.img {
+    width: 40%;
+    height: 40%; 
+    border-radius: 3vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.text {
+    font-family: "Merriweather", serif; 
+    font-size: 20px;
+    border: 5px solid #a18f8f;
+    border-radius: 3vh; 
+    text-align: center;
+    color: #1b1b1b;
+    background-color: #a18f8f;
+    height: 40%;
+    width: 40%;
+    padding: 5%;
+    text-align: left;
+}
+
+@media screen and (max-width: 550px) {
+    header {
+        display: none;
+    }
+            .navbar__wrap .menu {
+              display: none;
+            }
+          
+            .hamb {
+              display: flex;
+              align-items: center;
+            }
+          
+            .hamb__field {
+              padding: 10px 20px;
+              cursor: pointer;
+            }
+          
+            .bar {
+              display: block;
+              width: 30px;
+              height: 3px;
+              margin: 6px auto;
+              background-color: #fff;
+              transition: 0.2s;
+            }
+          
+            .popup {
+              position: fixed;
+              top: 75px;
+              left: -100%;
+              width: 100%;
+              height: 100%;
+              background-color: #fff;
+              z-index: 100;
+              display: flex;
+              transition: 0.3s;
+            }
+          
+            .popup.open {
+              left: 0;
+            }
+          
+            .popup .menu {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: start;
+              padding: 50px 0;
+              overflow: auto;
+            }
+          
+            .popup .menu > li {
+              width: 100%;
+            }
+          
+            .popup .menu > li > a {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              padding: 20px 0;
+              font-size: 20px;
+              font-weight: bold;
+              color: #3f3f3f;
+            }
+          
+            .popup .menu > li > a:hover {
+              background-color: rgba(122, 82, 179, 0.1);
+            }
+          
+            .hamb__field.active .bar:nth-child(2) {
+              opacity: 0;
+            }
+          
+            .hamb__field.active .bar:nth-child(1) {
+              transform: translateY(8px) rotate(45deg);
+            }
+          
+            .hamb__field.active .bar:nth-child(3) {
+              transform: translateY(-8px) rotate(-45deg);
+            }
+          
+            body.noscroll {
+              overflow: hidden;
+            }
+          
+     .main {
+        max-width: 100%;
+     } 
+
+     .block_1 {
+        flex-direction: column;
+        margin: auto;
+        padding: auto;
+        max-width: 80%;
+     }
+
+     .img_one {
+        width: 100%;
+        height: 100%;
+        padding: auto;
+        margin: auto;
+       
+     }
+     .img {
+        width: 100%;
+        height: 100%;
+     }
+     .text {
+        width: 90%;
+        height: 100%;
+        font-size: 18px;
+        padding: auto;
+        margin: auto;
+     }
+} 
+@media screen and (min-width: 551px) and (max-width: 2400px) {
+    .navbar {
+        display: none;
+    } 
+    
+}

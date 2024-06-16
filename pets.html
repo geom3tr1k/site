@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta charset="utf-8">
+  <title>Flexbox Testimonials</title>
+  <link rel="stylesheet" href="pets.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="containe">
+      <div class="navbar__wrap">
+        <div class="hamb">
+          <div class="hamb__field" id="hamb">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+        <ul class="menu" id="menu">
+          <li><a href="index.html">О себе</a></li>
+          <li><a href="studying.html">Я учусь</a></li>
+          <li><a href="hobby.html">О хобби</a></li>
+          <li><a href="vacation.html">Я на отдыхе</a></li>
+          <li><a href="pets.html">Мои питомцы</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="popup" id="popup"></div>
+  <div class="col-sm-7 mx-auto">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">О себе</a></li>
+                <li><a href="studying.html">Я учусь</a></li>
+                <li><a href="hobby.html">О хобби</a></li>
+                <li><a href="vacation.html">Я на отдыхе</a></li>
+                <li><a href="pets.html">Мои питомцы</a></li>
+            </ul>
+        </nav>
+    </header>
+  </div>
+  <div class="container">
+
+  <div id="flex-container" class="testimonials">
+    <div id="left-zone">
+      <ul class="list">
+        <li class="item">
+          <input type="radio" id="radio_testimonial-1" name="basic_carousel" checked="checked" />
+          <label class="text_menu label_testimonial-1" for="radio_testimonial-1">Волнистый попугай Стёпа</label>
+          <div class="content-test content_testimonial-1">
+            <h1>Волнистый попугай Стёпа</h1>
+            <img src="img/parrot.jpg" alt="" class="parrot">
+            <p class="text_cat">Cтёпа появился у меня еще во 2-ом классе. Первое его имя - Гриша из-за моей плохой памяти. 
+                Сейчас ему около 9 лет, он часто стал болеть, но до сих пор остается веселой птичкой.
+            </p>
+          </div>
+        </li>
+        
+        <li class="item">
+          <input type="radio" id="radio_testimonial-3" name="basic_carousel" />
+          <label class="text_menu label_testimonial-3" for="radio_testimonial-3">Сибирская кошка Рори</label>
+          <div class="content-test content_testimonial-3">
+            <h1>Сибирская кошка Рори</h1>
+            <img src="img/cat.jpg" alt="" class="cat">
+            <p class="text_cat">Пару лет назад мне купили кошку. Её назвали Рори. Сейчас ей около 4 лет и она, к сожалению,
+                живет сейчас у бабушки, а не со мной.
+            </p>
+          </div>
+        </li>
+        <li class="item">
+          <input type="radio" id="radio_testimonial-4" name="basic_carousel" />
+          <label class="text_menu label_testimonial-4" for="radio_testimonial-4">Такса Лола</label>
+          <div class="content-test content_testimonial-4">
+            <h1>Такса Лола</h1>
+            <img src="img/dog.jpg" alt="" class="cat">
+            <p class="text_cat"> 
+                Лола — очаровательная такса с длинным телом и короткими лапками.  Лола живёт в уютном доме с большой семьёй, 
+                где её все обожают. Она всегда полна энергии и готова к новым приключениям.</p>
+           
+            
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="right-zone"></div>
+  </div>
+
+ </div>
+</body>
+<script src="pets.js"></script>
+<script src="index.js"></script>
+</html>
